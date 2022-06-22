@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="browser" value="chrome"/>
+  <listeners>
+    <listener class-name="com.test.util.Listener"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="com.test.testcases.Orderpagetest">
+        <methods>
+          <include name="order"/>
+        </methods>
+      </class> <!-- com.test.testcases.Orderpagetest -->
+      <class name="com.test.testcases.Signinpagetest">
+        <methods>
+          <include name="signin"/>
+          <include name="setup"/>
+          <include name="intialize_properties"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.test.testcases.Signinpagetest -->
+      <class name="com.test.testcases.Indexpagetest">
+        <methods>
+          <include name="verifyurl"/>
+          <include name="verifylogo"/>
+          <include name="signinlink"/>
+          <include name="tearDown"/>
+          <include name="intialize_properties"/>
+        </methods>
+      </class> <!-- com.test.testcases.Indexpagetest -->
+      <class name="com.test.testcases.MyAccounttestpage">
+        <methods>
+          <include name="intialize_properties"/>
+          <include name="search"/>
+        </methods>
+      </class> <!-- com.test.testcases.MyAccounttestpage -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
